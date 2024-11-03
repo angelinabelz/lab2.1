@@ -1,26 +1,26 @@
 // Lab_02.cpp
-// < Белз Ангеліна Василівна >
-// Лабораторна робота № 2.
-// Лінійні програми.
-// Варіант 1
-
+// < Р‘РµР»Р· РђРЅРіРµР»С–РЅР° >
+// Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР° СЂРѕР±РѕС‚Р° в„– 2.
+// Р›С–РЅС–Р№РЅС– РїСЂРѕРіСЂР°РјРё.
+// Р’Р°СЂС–Р°РЅС‚ 1
 
 #include <iostream>
 #include <cmath>
-using namespace std;
 
-double M_PI = 3.14;
+using namespace std;
 
 int main()
 {
-    double x;  // вхідний параметр
-    double z1; // результат обчислення 1-го виразу
-    double z2; // результат обчислення 2-го виразу
+    double x;
+    double z1;
+    double z2;
 
     cout << "x = "; cin >> x;
 
-    z1 = 2 * pow(sin(3 * M_PI - 2 * x), 2) * pow(cos(5 * M_PI + 2 * x), 2);
-    z2 = 0.25 - 0.25 * sin((5.0 / 2) * M_PI - 8 * x);
+    const double PI = 3.141592653589793;
+
+    z1 = 2 * pow(sin(3 * PI - 2 * x), 2) * pow(cos(5 * PI + 2 * x), 2);
+    z2 = (1.0 / 4.0) - (1.0 / 4.0) * sin((5.0 / 2.0) * PI - 8 * x);
 
     cout << endl;
     cout << "z1 = " << z1 << endl;
